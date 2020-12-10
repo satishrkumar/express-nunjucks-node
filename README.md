@@ -2,7 +2,7 @@ express-nunjucks-node
 ================
 
 
-Clone this repository (will automatically create a subfolder called "express-nunjucks": 
+Clone this repository (will automatically create a subfolder called "express-nunjucks-node": 
 
 `git clone https://github.com/satishrkumar/express-nunjucks-node.git`
 
