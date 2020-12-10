@@ -6,7 +6,7 @@ Clone this repository (will automatically create a subfolder called "express-nun
 
 `git clone https://github.com/satishrkumar/express-nunjucks-node.git`
 
-Install required dependencies (do this inside of the express-nunjucks folder): 
+Install required dependencies (do this inside of the xpress-nunjucks-node folder): 
 
 `npm install`
 
