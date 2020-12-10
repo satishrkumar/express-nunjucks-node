@@ -1,27 +1,10 @@
-express-nunjucks
+express-nunjucks-node
 ================
 
-Sample Node Express + Nunjucks app
-
-[Express](http://expressjs.com) by default comes with the Jade templating engine. This app replaces Jade with [Nunjucks] (http://mozilla.github.io/nunjucks/).
-
-Installation instructions (for RHEL/CentOS):
-
-Install Node + Express: 
-
-`curl -sL https://rpm.nodesource.com/setup | bash -`
-
-`yum install -y nodejs`
-
-`npm install -g express-generator`
-
-Install git: 
-
-`yum install -y git`
 
 Clone this repository (will automatically create a subfolder called "express-nunjucks": 
 
-`git clone https://github.com/ababra/express-nunjucks.git`
+`git clone https://github.com/satishrkumar/express-nunjucks-node.git`
 
 Install required dependencies (do this inside of the express-nunjucks folder): 
 
@@ -29,6 +12,14 @@ Install required dependencies (do this inside of the express-nunjucks folder):
 
 To launch the app: 
 
-`DEBUG=express-nunjucks PORT=3000 ./bin/www`
+`npm start`
 
-Open a browser and navigate to http://hostname-or-IP:3000
+To test: 
+
+`npm test`
+
+To run end-2-end test: 
+
+`npm run e2e` (Note: UI expecting user api running on local machine ==> please `git clone https://github.com/satishrkumar/user-rest-api-with-mongodb.git` and boot spring appllication) 
+
+Open a browser and navigate to http://localhost:3002/
