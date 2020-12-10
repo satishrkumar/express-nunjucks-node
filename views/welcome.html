@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<title>New Applicant</title>
+</head>
+
+<body>
+
+	<FORM ACTION="/apply" METHOD="POST">
+		<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+			<center>
+				<tr>
+					<td>
+						<h1>Application Complete</h1>
+						<h2>{{ userPayload.name }} Thankyou for applying to this useful goverment service</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+				<ul>
+				{% for error in errors %}
+									{% include "error.html" %}
+									{% endfor %}
+									</ul>
+								</td>
+							</tr>
+				
+
+		</table>
+	</FORM>
+</body>
+
+</html>
