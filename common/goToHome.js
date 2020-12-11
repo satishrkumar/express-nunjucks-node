@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 function goToHome(res, userPayload, errors) {
-  var url = "https://restcountries.eu/rest/v1/region/Europe";
+  const url = "https://restcountries.eu/rest/v1/region/Europe";
   fetch(url)
     .then((res) => res.json())
     .then((countries) => {

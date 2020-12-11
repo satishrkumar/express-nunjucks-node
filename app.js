@@ -1,10 +1,8 @@
-var express = require('express');
-
-var logger = require('morgan');
-var nunjucks = require('nunjucks');
-var routes = require('./routes/applicationController');
-
-var app = express();
+const express = require('express');
+const logger = require('morgan');
+const nunjucks = require('nunjucks');
+const routes = require('./routes/applicationController');
+const app = express();
 
 
 app.use(express.urlencoded({
@@ -26,7 +24,7 @@ app.use(logger('dev'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
+    const err = new Error('Not Found');
     err.status = 404;
     next(err);
 });

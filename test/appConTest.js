@@ -2,19 +2,19 @@ const request = require("supertest");
 const should = require("should");
 const app = require("../app");
 
-var isValidCountry = function (res) {
+const isValidCountry = function (res) {
   res.text.indexOf(`<option value="United Kingdom">United Kingdom</option>`).should.be.aboveOrEqual(0);
 };
-var isAgeValid = function (res) {
+const isAgeValid = function (res) {
   res.text.indexOf(`Age should not be blank`).should.be.aboveOrEqual(0);
 };
-var isGenderValid = function (res) {
+const isGenderValid = function (res) {
   res.text.indexOf(`Gender should not be blank`).should.be.aboveOrEqual(0);
 };
-var isCountryValid = function (res) {
+const isCountryValid = function (res) {
   res.text.indexOf(`Country should not be blank`).should.be.aboveOrEqual(0);
 };
-var isNameValid = function (res) {
+const isNameValid = function (res) {
   res.text.indexOf(`Name should not be blank`).should.be.aboveOrEqual(0);
 };
 describe("GET applicaion user form", function () {

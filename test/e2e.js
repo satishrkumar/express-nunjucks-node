@@ -3,7 +3,7 @@ const should = require("should");
 const app = require("../app");
 const path = require("path");
 
-var isResponseHasWelcomeMessage = function (res) {
+const isResponseHasWelcomeMessage = function (res) {
   res.text
     .indexOf(`Runi Thankyou for applying to this useful goverment service`)
     .should.be.aboveOrEqual(0);
